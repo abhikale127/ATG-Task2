@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  height: 175%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.872rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+.App {
+  position: fixed;
+  width: 100%;
+}
+
+.Panel {
+  height: 79rem;
+}
+
+.Section1 {
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 2.4rem 4rem;
+  width: 45%;
+  float: left;
+  height: 100%;
+}
+.Section1 .Svg-sec-txt {
+  color: white;
+  position: absolute;
+  width: 33rem;
+  text-align: -webkit-center;
+  top: 16rem;
+  left: 38rem;
+  z-index: 2;
+}
+.Section1 .Svg-sec {
+  background-color: inherit;
+}
+.PathImg {
+  position: absolute;
+  top: 4rem;
+  left: 41rem;
+  height: 38rem;
+  border-radius: 100%;
+  width: 38rem;
+}
+
+.Section2 {
+  width: 55%;
+  float: Right;
+}
+
+@media (max-width: 420px) {
+  html {
+    overflow-y: hidden;
+  }
+  .Panel {
+    display: flex;
+    flex-direction: column;
+  }
+  .Section1 {
+    z-index: 1;
+    height: 45%;
+    float: left;
+    width: 100%;
+  }
+  .Section2 {
+    height: 55%;
+    float: Right;
+  }
+
+  .owl-dots {
+    text-align: center;
+    position: relative;
+    bottom: 4rem;
+  }
+  .owl-dots button.owl-dot {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    display: inline-block;
+    background: #fff;
+    opacity: 0.4;
+    margin: 0 3px;
+  }
+  .owl-dots button.owl-dot.active {
+    opacity: 1;
+    background-color: #fff;
+  }
+  .owl-dots button.owl-dot:focus {
+    outline: none;
+  }
+}
